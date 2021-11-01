@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Layout from './shared/layout';
-import Hero from './hero/hero';
+import Hero from './hero/Hero';
 import MainSection from './mainSection/MainSection';
 import FeaturedCollection from './featuredCollection/FeaturedCollection';
 
