@@ -1,7 +1,7 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
 
-const Total = ({ itemCount, total, history }) => {
+const Total = ({ itemCount, total, history, clearCart}) => {
 
     return (
         <div className="total-container">
@@ -15,7 +15,7 @@ const Total = ({ itemCount, total, history }) => {
                     onClick={() => history.push("/checkout")}>
                         CHECKOUT
                 </button>
-                <button className="button is-white" onClick={() => {}}>
+                <button className="button is-white" onClick={() => clearCart()}>
                     CLEAR
                 </button>
             </div>

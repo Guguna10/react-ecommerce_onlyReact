@@ -133,3 +133,12 @@
       } 
     }
   }
+
+  .error {
+    border: 1px solid red;
+  }
+
+  .error_message {
+    color: red;
+    font-size: 1.5rem;
+  }

@@ -2,7 +2,7 @@ import React from 'react'
 import { PlusCircleIcon, MinusCircleIcon, TrashIcon } from '../../../icons/Index'
 
 const CartItem = (props) => {
-    const { title, imageUrl, price, quantity, description, id, increase, decrease } = props;
+    const { title, imageUrl, price, quantity, description, id, increase, decrease, removeProduct } = props;
     const product = { title, imageUrl, price, quantity, id, description }
 
     return (
@@ -23,7 +23,7 @@ const CartItem = (props) => {
                 </button>
                 {
                     quantity === 1 &&
-                    <button className="btn-trash">
+                    <button className="btn-trash" onClick={() => removeProduct(product)}>
                         <TrashIcon width="20px" />
                     </button>
                 }
